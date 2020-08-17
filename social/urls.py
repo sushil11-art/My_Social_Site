@@ -21,8 +21,6 @@ urlpatterns = [
     path('myprofile/follow/<int:pk>',views.follow),
     path('myprofile/unfollow/<int:pk>',views.unfollow),
 
-    # path('profile/edit/<int:pk>', views.ProfileUpdateView.as_view(success_url="/college/home")),
     path('', RedirectView.as_view(url="home/")),    
 ]
 
-#path('profile/edit/<int:pk>', views.MyProfileUpdateView.as_view(success_url="/social/home")),

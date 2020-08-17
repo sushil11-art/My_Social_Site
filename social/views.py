@@ -111,33 +111,4 @@ class MyProfileListView(ListView):
 class MyProfileDetailView(DetailView):
     model = MyProfile
 
- 
-# 
-# @method_decorator(login_required, name="dispatch")    
-# class ProfileUpdateView(UpdateView):
-#     model = Profile
-#     fields = ["branch", "sem", "marks_10", "marks_12", "marks_aggr", "rn", "myimg", "myresume", "skills"]
-# 
-# 
-# @method_decorator(login_required, name="dispatch")    
-# class QuestionCreate(CreateView):
-#     model = Question
-#     fields = ["subject", "msg"]
-#     def form_valid(self, form):
-#         self.object = form.save()
-#         self.object.user = self.request.user
-#         self.object.save()
-#         return HttpResponseRedirect(self.get_success_url())
-#     
-# @method_decorator(login_required, name="dispatch")    
-# class MyList(TemplateView):
-#     template_name = "college/mylist.html"
-#     def get_context_data(self, **kwargs):
-#         context = TemplateView.get_context_data(self, **kwargs)
-#         context["notices"] = Notice.objects.order_by("-id")[:3]
-#         context["questions"] = Question.objects.order_by("-id")[:3]
-#         return context;
-# 
-# 
-#     
-#     
+
